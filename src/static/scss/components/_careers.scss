@@ -9,13 +9,43 @@
   }
 }
 .career-page{
+  padding: 9.6rem 0;
   .title-block{
     text-align: center;
+    margin-bottom: 4rem;
   }
 }
 .career-item{
+  padding: 6.2rem 6.4rem;
+  margin-right: -6.4rem;
+  margin-left: -6.4rem;
+  border-bottom: 1px solid $default;
+  &:nth-of-type(2n){
+    background-color: rgba($gray-400, .5);
+  }
+  &:first-of-type{
+    border-top: 1px solid $default;
+  }
+  &__top{
+    display: none;
+    margin-bottom: 3.5rem;
+  }
+  &__title{
+    color: $primary;
+    font-family: $Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+  }
   li{
     display: flex;
+    margin-bottom: 4rem;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
     &:first-of-type{
       .career-item__text{
         font-weight: 600;
@@ -26,7 +56,7 @@
     font-family: $Poppins;
     font-size: 1.6rem;
     font-style: normal;
-    line-height: 100%;
+    line-height: 110%;
     width: 50%;
   }
   &__title{
