@@ -99,6 +99,15 @@ img {
     }
   }
 }
+.title-block{
+  font-size: 4rem;
+  font-family: $Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 4rem;
+  color: $default;
+}
 .title-pseudo-white{
   z-index: 1;
   position: relative;
@@ -121,6 +130,17 @@ img {
   font-size: 1.6rem;
   line-height: 170%;
   color: $gray-700;
+  p{
+    font-family: $Manrope;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 170%;
+    color: $gray-700;
+    margin-bottom: 1.6rem;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
 }
 section {
   position: relative;
@@ -132,6 +152,18 @@ section {
 }
 .bg-dark{
   background-color: $default;
+  .title-section{
+    color: $white;
+  }
+  .subtitle-text{
+    color: $white;
+  }
+  .hero-title{
+    color: $white;
+  }
+  .text-section{
+    color: $white;
+  }
 }
 .row.min {
   margin-left: -5px;
@@ -395,10 +427,14 @@ input, textarea {
   padding: 1.6rem;
   outline: none;
   width: 100%;
-  background: $white;
-  border: 1px solid $default;
+  color: $white;
+  background: transparent;
+  border: 1px solid $white;
   border-radius: .6rem;
   text-overflow: ellipsis;
+  &::-placeholder{
+    color: $gray-700;
+  }
   //&::-webkit-input-placeholder {
   //  color: $gray;
   //  opacity: 1;
@@ -463,11 +499,11 @@ input, textarea {
     cursor: pointer;
     display: block;
     font-size: 1.4rem;
-    color: $default;
+    color: $gray-700;
     font-weight: 400;
     a{
       font-size: 1.4rem;
-      color: $default;
+      color: $gray-700;
       font-weight: 400;
       text-decoration: underline;
     }
@@ -480,7 +516,7 @@ input, textarea {
       width: 2rem;
       height: 2rem;
       border-radius: .2rem;
-      border: 1px solid $gray-800;
+      border: 1px solid $white;
       left: 0;
       top: 0.3rem;
     }
@@ -501,6 +537,10 @@ input, textarea {
     &:checked
     +  {
       .label-checkbox{
+        color: $white;
+        a{
+          color: $white;
+        }
         &:before{
           opacity: 1;
         }

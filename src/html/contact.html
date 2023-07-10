@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="hero hero-contact bg-dark">
+			<div class="container-full">
+				<div class="bread-crumbs">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>Contact</li>
+					</ul>
+				</div>
+				<div class="hero-map">
+					<div class="hero-map__media">
+						<img src="../static/images/general/map.svg" alt="map">
+					</div>
+					<div class="hero-map__title">
+						<img src="../static/images/general/pin-white.svg" alt="pin-white">
+						<span>ATEQ - Bergen Stillas AS - Stillasutleie i Bergen</span>
+					</div>
+				</div>
+				<div class="questions-form">
+					<div class="hero-title">
+						Questions? Just Ask
+					</div>
+					<form>
+						<label class="label"><input type="text" name="First Name" class="input" placeholder="First Name"></label>
+						<label class="label"><input type="text" name="Last Name" class="input" placeholder="Last Name"></label>
+						<label class="label"><input type="email" name="Email" class="input" placeholder="Email Address @creatt.in"></label>
+						<label class="label"><input type="tel" name="Phone" class="input" placeholder="Phone Number (+1)"></label>
+						<label class="label"><textarea name="Message" placeholder="Your Message" class="textarea"></textarea></label>
+						<div class="modal-group">
+							<input class="input-checkbox" type="checkbox" id="question-checkbox">
+							<label class="label-checkbox" for="question-checkbox">I understand the site's
+								<a href="#">privacy statement</a> and am willingly sharing my contact details in order to be contacted .</label>
+						</div>
+						<button type="submit" class="btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="contact">
+			<div class="container-full">
+				<div class="contact-wrap">
+					<div class="contact-item">
+						<div class="contact-item__title">Godziny otwarcia:</div>
+						<div class="contact-item__text">Pon. - Sb.: 07-19</div>
+					</div>
+					<div class="contact-item">
+						<div class="contact-item__title">Address:</div>
+						<div class="contact-item__text">
+							<ul>
+								<li>
+									Bergen Stillas <br>
+									923477276 VAT <br>
+									Sollien 39 5096 Bergen
+ 								</li>
+								<li>
+									Litlås 20, 5954 <br>
+									Mongstad
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="contact-item__title">Phone:</div>
+						<div class="contact-item__text">
+							<a href="tel:5055550125">(505) 555-0125</a>
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="contact-item__title">Email:</div>
+						<div class="contact-item__text"><a href="mailto:post@bestillas.no">post@bestillas.no</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="map-section">
+			<div class="map" id="map"></div>
+		</section>
+
+		<script async defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt8S8uRnvbEkGevo-cdzjBRCRPGfsfbYI&callback=mapInitialize&libraries=&v=weekly"></script>
+		<script  type="text/javascript" src="../static/js/map.js"></script>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+
+
+</body>
+</html>

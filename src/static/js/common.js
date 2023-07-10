@@ -188,8 +188,26 @@ $('.work-slider').slick({
     infinite: true,
     autoplaySpeed:3300,
     variableWidth: true,
-
+    prevArrow: $('.work-nav .prev'),
+    nextArrow: $('.work-nav .next'),
 });
+
+$('.custom-slider').each(function() {
+    const parent = $(this);
+    let item = parent.find('.slide-item');
+    while (item.length > 0) {
+        chunk = item.splice(0,3);
+        let parents = $("<div>", {"class": "slide"});
+        parents.append(chunk);
+        $('.custom-slider-inner').append(parents);
+    }
+});
+$('.custom-slider-inner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+});
+
 AOS.init({disable: 'mobile'});
 
 //

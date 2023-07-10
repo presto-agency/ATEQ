@@ -3,6 +3,11 @@
   &-desc{
     margin-bottom: 5.7rem;
   }
+  &-inner{
+    .hero-title{
+      font-size: 4.8rem;
+    }
+  }
   &-title{
     font-family: $Poppins;
     font-weight: 700;
@@ -20,7 +25,11 @@
       max-width: 100%;
       text-align: center;
       &:before{
-        top: 5rem;
+        top: -2rem;
+        left: -11rem;
+        background-size: contain;
+        width: 20.6rem;
+        height: 19rem;
       }
     }
   }
@@ -177,6 +186,36 @@
       }
     }
   }
+  &-contact{
+    padding: 10.1rem 0 9.6rem;
+  }
+  &-form{
+    position: relative;
+    z-index: 2;
+    .label{
+      margin-bottom: 2rem;
+    }
+  }
+  .modal-group{
+    margin: 2.4rem auto 5.6rem;
+  }
+  .label{
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+  &-map{
+    &__media{
+      height: 40rem;
+      position: relative;
+      overflow: hidden;
+      img{
+        position: absolute;
+        bottom: 0;
+        width: 82.3rem;
+        height: 86.2rem;
+      }
+    }
+  }
 }
 @keyframes rotate-text-animation {
   to {
@@ -219,6 +258,13 @@
 }
 .about{
   padding: 0 0 9.6rem;
+  &-inner{
+    .about-media{
+      .title-section{
+        font-size: 4.8rem;
+      }
+    }
+  }
   &-media{
     margin: 0 -2.4rem 5.6rem;
     width: calc(100% + 4.8rem);
@@ -484,17 +530,7 @@
     margin: 0 auto;
     padding: 9.6rem 2.4rem;
   }
-  &-form{
-    position: relative;
-    z-index: 2;
-  }
-  .modal-group{
-    margin: 2.4rem auto 5.6rem;
-  }
-  .label{
-    display: block;
-    margin-bottom: 1.6rem;
-  }
+
 }
 .contacts{
   &-inner{
@@ -557,6 +593,35 @@
     img{
 
       width: 100%;
+    }
+  }
+}
+.contact{
+  &-item{
+    margin-bottom: 3.2rem;
+    &__title{
+      color: $primary;
+      font-size: 1.6rem;
+      font-family: $Poppins;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+    }
+    &__text{
+      font-size: 1.6rem;
+      font-family: $Manrope;
+      font-weight: 500;
+      line-height: 160%;
+      color: $gray-700;
+      a{
+        font-size: 1.6rem;
+        font-family: $Manrope;
+        font-weight: 500;
+        line-height: 160%;
+        color: $gray-700;
+      }
     }
   }
 }

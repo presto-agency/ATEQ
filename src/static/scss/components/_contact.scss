@@ -1,0 +1,95 @@
+.hero-map{
+  margin-bottom: 5.6rem;
+  &__title {
+    position: absolute;
+    content: '';
+    left: 8.3rem;
+    top: 26.4rem;
+    span{
+      font-family: $Manrope;
+      color: $white;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      display: block;
+      max-width: 18rem;
+    }
+  }
+}
+.contact{
+  padding: 9.6rem 0;
+  &-item{
+    border-bottom: 1px solid $gray-400;
+    padding-bottom: 3.2rem;
+    margin-bottom: 3.2rem;
+    &:last-of-type{
+      border-bottom-color: transparent;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    &__text{
+      li{
+        padding-bottom: 1.6rem;
+        margin-bottom: 1.6rem;
+        border-bottom: 1px solid $gray-400;
+        display: inline-block;
+        &:last-of-type{
+          width: 100%;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+}
+.map-section{
+  height: 60rem;
+  padding: 0;
+  .map{
+    width: 100%;
+    height: 100%;
+  }
+  .map-title{
+    font-family: $Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 1rem;
+  }
+  .map-text{
+    font-family: $Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 1rem;
+  }
+  .map-link{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    color: $primary;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .gm-style-iw{
+    max-width: 30rem !important;
+  }
+  a[href^="http://maps.google.com/maps"]{display:none !important}
+  a[href^="https://maps.google.com/maps"]{display:none !important}
+
+  .gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+  }
+  .gmnoprint div {
+    background:none !important;
+  }
+}
